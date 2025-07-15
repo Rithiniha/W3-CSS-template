@@ -294,104 +294,138 @@ body { font-family: Verdana, sans-serif; background: #fff; color: #222; }
   }
 }
 
-@media (max-width: 700px) {
-  
+
+@media (max-width: 376px) {
   .main-content {
-    padding: 6px;
+    padding: 4px;
     box-shadow: none;
     margin: 0;
     width: 100vw;
     background: #fff;
     border-radius: 0;
   }
-  
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 8px 4px;
+    padding: 7px 2px;
     height: auto;
   }
-
+  .navbar-brand {
+    font-size: 13px;
+    line-height: 36px;
+    letter-spacing: 2px;
+    padding-bottom: 3px;
+  }
   .navbar-links {
-    margin-top: 8px;
+    margin-top: 6px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 1px;
   }
   .navbar-links a {
     margin: 0;
     width: 100%;
-    padding: 12px 0;
-    line-height: normal;
+    padding: 8px 0;
+    line-height: 16px;
     text-align: left;
-    font-size: 16px;
-    letter-spacing: 2px;
+    font-size: 14px;
+    letter-spacing: 1px;
   }
-  
+  .header-image {
+    height: 88px;            
+    width: 100vw;
+    min-width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0;
+  }
+  .header-center h1 {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .header-logo {
+    font-size: 10px;
+    padding: 2px 7px;
+  }
+  .header-title {
+    font-size: 8px;
+    padding-left: 1px;
+  }
   .projects-row,
   .team-row {
-    display: grid;                
-    grid-template-columns: 1fr;   
-    gap: 16px;                    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
     padding: 0 2px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
+    margin-top: 6px;
   }
-
-  
   .project-card,
   .team-card {
-    max-width: 98vw;
+    max-width: 97vw;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-  
   .team-card img,
   .project-card img {
-    
-    max-width: 98vw;
-    width: 80%;
+    max-width: 96vw;
+    width: 100%;
     height: auto;
-    max-height: 180px;
+    max-height: 110px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 3px;
   }
-  
   .section-title {
-    font-size: 16px;
-    padding-top: 24px;
-    padding-bottom: 8px;
-    margin-bottom: 12px;
+    font-size: 13px;
+    padding-top: 14px;
+    padding-bottom: 4px;
+    margin-bottom: 7px;
+    text-align: left;
   }
   .team-card h3 {
-    font-size: 15px;
-  }
-  .team-role, .team-desc {
     font-size: 12px;
   }
-  .team-button {
-    font-size: 13px;
-    padding: 11px 0;
+  .team-role, .team-desc {
+    font-size: 11px;
   }
-  
+  .team-button {
+    font-size: 11px;
+    padding: 6px 0;
+    width: 96%;
+  }
   .contact-form {
     max-width: 99vw;
-    padding: 0 1vw;
+    padding: 0 0.5vw;
+    gap: 6px;
   }
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  textarea {
-    font-size: 15px;
-    padding: 12px 8px;
+  .contact-form input {
+    font-size: 13px;
+    padding: 9px 5px;
+    width: 98vw;
+    margin-bottom: 6px;
+  }
+  .contact-form button {
+    width: 80vw;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .map-section {
+    margin-top: 8px;
+    margin-bottom: 14px;
+  }
+  .map-image {
+    max-width: 99vw;
+    border-radius: 3px;
   }
   .footer {
-    font-size: 13px;
-    padding: 12px 0;
-    margin-top: 20px;
+    font-size: 11px;
+    padding: 10px 0;
+    margin-top: 12px;
+    border-radius: 0;
   }
 }
-
-
