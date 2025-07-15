@@ -1,0 +1,397 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Verdana, sans-serif; background: #fff; color: #222; }
+
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  border: none;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  height: 48px;
+  font-family: Verdana, sans-serif;
+}
+
+.navbar-brand {
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 3px;
+  line-height: 48px;
+  user-select: none;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 18px;
+}
+
+.navbar-links a {
+  color: #000;
+  text-decoration: none;
+  font-family: Verdana, sans-serif;
+  letter-spacing: 4px;
+  font-size: 15px;
+  padding: 0 4px;
+  line-height: 48px;
+  transition: color 0.2s;
+  user-select: none;
+  background: none;
+  border: none;
+  margin: 0;
+}
+
+.navbar-links a:hover {
+  color: #090909;
+  background: rgba(204,204,204,255);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: color 0.2s,
+    background 0.2s,
+    box-shadow 0.2s;
+}
+
+
+.header {
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.header-image {
+  width: 99.5%;
+  height: 800px;
+  object-fit: cover;
+  display: block;
+  margin-left: 0.50%;
+  margin-right: 0.50%;
+  box-sizing: border-box;
+}
+
+.header-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-logo {
+  background: #000;
+  color: #fff;
+  padding: 6px 12px;
+  opacity: 0.7;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+.header-title {
+  color: #f1f1f1;
+  font-size: 32px;
+  margin-left: 8px;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+
+.main-content {
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin: 0;
+  width: 100%;
+  background: #fff;
+  border-radius: 0;
+}
+
+
+.section {
+  margin-bottom: 40px;
+}
+.section-title {
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+
+.projects-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.project-card {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+.project-label {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 6px 12px;
+  font-size: 13px;
+  z-index: 2;
+  border-radius: 4px;
+}
+
+.team-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+.team-card {
+  flex: 1;
+  background: #fafafa;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  padding: 0 0 16px 0;
+  text-align: center;
+  min-width: 0;
+}
+.team-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.team-card h3 {
+  font-size: 17px;
+  margin: 12px 0 6px 0;
+}
+.team-role {
+  color: white;
+   font-size: 13px;
+  margin-bottom: 8px;
+}
+.team-button {
+  background: #eee;
+  border: none;
+  padding: 10px 0;
+  width: 90%;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.team-button:hover {
+  background:rgba(204,204,204,255);;
+  color: black;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+  max-width: 400px;
+}
+.contact-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 1480px; 
+}
+.contact-form button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 150px; 
+}
+.contact-form button:hover {
+  background: #333;
+}
+
+.map-section {
+  margin-top: 32px;
+}
+.map-image {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 15px;
+  border-radius: 0 0 8px 8px;
+}
+
+@media (max-width: 1000px) {
+  .main-content {
+    padding: 24px 32px;
+  }
+ 
+  .projects-row,
+  .team-row {
+    display: grid;                
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 24px;                    
+    padding: 0 32px;            
+    margin-bottom: 28px;     
+    justify-items: center;
+     
+  }
+  
+  .project-card,
+  .team-card {
+    width: 100%;                  
+    max-width: 420px;             
+    margin-left: auto;            
+    margin-right: auto;
+  }
+  
+  .team-card img,
+  .project-card img {
+    width: 100%;                  
+    height: auto;                 
+    max-width: 420px;             
+    max-height: 300px;            
+    display: block;               
+  }
+  
+  .section-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+    padding-top: 40px;
+    padding-bottom: 18px;
+  }
+  
+  .contact-form {
+    max-width: 95vw;
+    padding: 0 8vw;
+  }
+}
+
+@media (max-width: 700px) {
+  
+  .main-content {
+    padding: 6px;
+    box-shadow: none;
+    margin: 0;
+    width: 100vw;
+    background: #fff;
+    border-radius: 0;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 4px;
+    height: auto;
+  }
+
+  .navbar-links {
+    margin-top: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .navbar-links a {
+    margin: 0;
+    width: 100%;
+    padding: 12px 0;
+    line-height: normal;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  
+  .projects-row,
+  .team-row {
+    display: grid;                
+    grid-template-columns: 1fr;   
+    gap: 16px;                    
+    padding: 0 2px;
+    margin-bottom: 16px;
+  }
+
+  
+  .project-card,
+  .team-card {
+    max-width: 98vw;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .team-card img,
+  .project-card img {
+    
+    max-width: 98vw;
+    width: 80%;
+    height: auto;
+    max-height: 180px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .section-title {
+    font-size: 16px;
+    padding-top: 24px;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+  .team-card h3 {
+    font-size: 15px;
+  }
+  .team-role, .team-desc {
+    font-size: 12px;
+  }
+  .team-button {
+    font-size: 13px;
+    padding: 11px 0;
+  }
+  
+  .contact-form {
+    max-width: 99vw;
+    padding: 0 1vw;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    font-size: 15px;
+    padding: 12px 8px;
+  }
+  .footer {
+    font-size: 13px;
+    padding: 12px 0;
+    margin-top: 20px;
+  }
+}
+
+
